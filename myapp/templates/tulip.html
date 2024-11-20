@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="{% static '/image/logomyhome.png' %}" height="60px">
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/propertytypes">Property</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/postproperty" class="post-btn">
+            <button>Post Your Property</button>
+        </a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</header>
+
+<div class="pproperty-container">
+    <!-- Video Section -->
+    <div class="pproperty-video">
+        <video width="100%" autoplay muted loop>
+            <source src="{% static '/image/tulipp.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+   <div class="boxed-navigation">
+  <a href="#pd" class="box-item">Project Details</a>
+  <a href="#reviews" class="box-item">Reviews</a>
+  <a href="#mp" class="box-item">Explore Locality</a>
+       <a href="#dealer" class="box-item">Dealer Details</a>
+</div>
+
+
+    <!-- Property Details Section -->
+    <div id="pd" class="pproperty-container">
+    <div class="pproperty-details">
+        <div class="price-info">
+            <h2>TULIP PARK</h2>
+            <p>3BHK Penthouse</p>
+        </div>
+        <div class="pproperty-meta">
+            <p>2 Balcony</p>
+            <p>On 5th Floor</p>
+            <p>Lift Available</p>
+            <p>Open Terrace</p>
+            <p>Parking Space</p>
+        </div>
+        <div class="stats">
+            <div><strong>LOCATION-</strong>9, Parshuram Colony, Neemuch Kheda, Udaipur, Rajasthan</div>
+        </div>
+
+    </div>
+    <div class="property-overview">
+        <h3>Property Overview</h3>
+        <p>
+Experience the pinnacle of modern living in this spacious 3BHK penthouse located in the serene Parshuram Colony, Neemuch Kheda, Udaipur.
+            Nestled on the 5th floor, this premium residence boasts 2 balconies for panoramic views, an open terrace perfect for relaxation, and ample parking space for convenience.
+            With a lift available for easy access, this home blends comfort with style, offering the perfect retreat in the heart of Rajasthan.
+        </p>
+    </div>
+</div>
+
+    <section id="dealer" class="builder-section">
+  <div class="builder-container">
+    <div class="builder-item">
+      <i class="fas fa-home"></i>
+      <p>9, Parshuram Colony, Neemuch Kheda, Udaipur, Rajasthan 313001</p>
+    </div>
+    <div class="builder-item">
+      <i class="fas fa-phone-alt"></i>
+      <p>+91 9982618222</p>
+    </div>
+    <div class="builder-item">
+      <i class="fas fa-envelope"></i>
+      <p>info@sanchigroup.in</p>
+    </div>
+  </div>
+</section>
+
+   <section  id="reviews" class="ratings-section">
+  <div class="ratings-container">
+    <!-- Overall Rating -->
+    <div class="overall-rating">
+      <h2>Average Rating</h2>
+      <div class="rating-score">4.5</div>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>Based on 250 reviews</p>
+    </div>
+
+    <!-- Individual Ratings -->
+    <div class="individual-ratings">
+      <div class="rating-bar">
+        <span class="rating-label">5 Stars</span>
+        <div class="bar">
+          <div class="filled-bar" style="width: 80%;"></div>
+        </div>
+        <span class="rating-count">200</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">4 Stars</span>
+        <div class="bar">
+          <div class="filled-bar" style="width: 60%;"></div>
+        </div>
+        <span class="rating-count">150</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">3 Stars</span>
+        <div class="bar">
+          <div class="filled-bar" style="width: 30%;"></div>
+        </div>
+        <span class="rating-count">75</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">2 Stars</span>
+        <div class="bar">
+          <div class="filled-bar" style="width: 15%;"></div>
+        </div>
+        <span class="rating-count">30</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">1 Star</span>
+        <div class="bar">
+          <div class="filled-bar" style="width: 10%;"></div>
+        </div>
+        <span class="rating-count">20</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Map Section -->
+    <div id="mp" class="pproperty-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.092913007792!2d73.67913867357181!3d24.620482354821554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e50bd250b109%3A0x3a3b5bb5d11219fe!2sTULIP%20PARK!5e0!3m2!1sen!2sin!4v1731995272634!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="/">
+  <img src="{% static 'image/02.png' %}" alt="Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <p> MyHome is your trusted partner in finding the perfect property. Whether you're looking to buy, sell, or rent, we offer a comprehensive range of services to meet your real estate needs. Our dedicated team ensures a seamless experience with personalized support and expert advice.</p>
+
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Services</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">List Your Property</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="/propertytypes">Buy Property</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">Rental Property</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Help Center</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/termcondition">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> MyHome </h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="/about">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Work With Us</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Our Brand Book</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/trends">Real Estate Trends</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="/blogpage">Blogs</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+           <div class="footer-social-media">
+          <h2 class="footer-social-media-title">Follow Us</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="{% static '/script.js' %}"></script>
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

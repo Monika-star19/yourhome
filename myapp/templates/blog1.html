@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="{% static '/image/logomyhome.png' %}" height="60px">
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/propertytypes">Property</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/postproperty" class="post-btn">
+            <button>Post Your Property</button>
+        </a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</header>
+
+<section class="heroo position-relative">
+<br><br>
+
+<h2 align="center" style="color:#fff;">Find Your Dream Home with MyHome</h2>
+
+<div class="center-content">
+<h2 style=" color: #fff; ">1. Comprehensive Listings for Buyers and Renters</h2>
+<p style=" color: #fff; ">Finding the right home or rental can be challenging, especially when faced with limited information. At MyHome.ug, we offer an extensive database of properties across Uganda. Whether you're seeking a cozy apartment in Kampala or a spacious house in a quieter part of the country, our platform has something for everyone.<br>
+You can browse property listings with detailed information, including:
+</p>
+<ul style=" color: #fff; " >
+    <li>Property size and layout</li>
+    <li>Location details and neighborhood amenities</li>
+    <li>High-quality images and virtual tours</li>
+    <li>Contact information for property agents or owners</li>
+</ul>
+<p style=" color: #fff; ">Our advanced search filters allow you to refine your options by budget, property type, and location, making the process efficient and stress-free.</p>
+
+<h2  style=" color: #fff; ">2. A Seamless Experience for Sellers</h2>
+<p style=" color: #fff; ">Selling a property can be time-consuming, but MyHome.ug simplifies the process. By listing your property on our platform, you'll reach thousands of potential buyers and renters across Uganda. Our user-friendly interface allows you to upload your property details, images, and pricing easily, ensuring that your listing stands out.<br>
+In addition, we offer various promotional tools to boost the visibility of your property, helping you close deals faster.</p>
+
+<h2  style=" color: #fff; ">3. Trusted and Verified Listings</h2>
+<p style=" color: #fff; ">At MyHome.ug, trust is our priority. We work hard to ensure that all property listings are verified, giving you peace of mind as you browse or list properties. Our platform partners with credible real estate agents and property owners, so you can be sure you're getting accurate information and legitimate opportunities.</p>
+<h2  style=" color: #fff; ">    4. Expert Advice and Resources</h2>
+<p style=" color: #fff; ">Real estate transactions can be complex, but MyHome.ug is here to guide you through every step.<br>
+     Our blog and resources section offers expert advice on topics such as:</p>
+<ul style=" color: #fff; ">
+    <li>How to Buy a Home in Uganda: A complete guide for first-time buyers, including tips on securing a mortgage and understanding legal requirements.</li>
+    <li>Renting Tips: Essential information for renters, from lease agreements to tenant rights.</li>
+    <li>Property Investment: Strategies to help you make informed investment decisions in Uganda's growing real estate market.</li>
+</ul>
+<p style=" color: #fff; ">Stay informed with market trends, legal updates, and home improvement ideas, all available on our platform.</p>
+
+<h2  style=" color: #fff; ">5. Responsive and Mobile-Friendly</h2>
+<p style=" color: #fff; ">Your real estate search shouldn't be limited to a desktop. That's why MyHome.ug is fully optimized for mobile devices, allowing you to browse and manage property listings on the go. Whether you're viewing properties on your phone or contacting sellers directly from your mobile, our platform ensures a smooth, hassle-free experience.</p>
+
+
+<h2  style=" color: #fff; ">Start Your Real Estate Journey with MyHome.ug Today</h2>
+<p style=" color: #fff; ">Whether you're in the market to buy, sell, or rent property, MyHome.ug is your trusted partner in Uganda's real estate sector. Start exploring listings today and take the first step toward your next property transaction.<br>
+Visit MyHome.ug now, and discover how simple real estate can be.</p>
+
+</div>
+
+</section>
+
+
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="/">
+  <img src="{% static 'image/02.png' %}" alt="Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <p> MyHome is your trusted partner in finding the perfect property. Whether you're looking to buy, sell, or rent, we offer a comprehensive range of services to meet your real estate needs. Our dedicated team ensures a seamless experience with personalized support and expert advice.</p>
+
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Services</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">List Your Property</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="/propertytypes">Buy Property</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">Rental Property</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Help Center</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/termcondition">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> MyHome </h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="/about">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Work With Us</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Our Brand Book</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/trends">Real Estate Trends</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="/blogpage">Blogs</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+           <div class="footer-social-media">
+          <h2 class="footer-social-media-title">Follow Us</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static '/script.js' %}"></script>
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

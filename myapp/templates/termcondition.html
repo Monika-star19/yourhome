@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="{% static '/image/logomyhome.png' %}" height="60px">
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/propertytypes">Property</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/postproperty" class="post-btn">
+            <button>Post Your Property</button>
+        </a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</header>
+<br><br>
+
+
+<section class="term">
+<h2 align="center">Terms and Conditions</h2>
+<hr>
+<p>Welcome to MyHome.ug. These Terms and Conditions outline the rules and regulations for using our website and services. By accessing or using MyHome.ug, you agree to comply with and be bound by these terms.</p>
+
+<h3> 1. Acceptance of Terms</h3>
+<p>By accessing or using MyHome.ug, you acknowledge that you have read, understood, and agree to these Terms and Conditions. If you do not agree to these terms, please discontinue using the website.</p>
+
+<h3>2. Services Provided</h3>
+<p>MyHome.ug provides a platform for users to buy, sell, and rent properties. We facilitate communication between property buyers, sellers, and renters, but we are not responsible for the actual transactions between the parties.</p>
+
+<h3>3. User Accounts</h3>
+<ul>
+    <li>You may be required to create an account to use certain features of the website.</li>
+    <li>You are responsible for maintaining the confidentiality of your account information, including your username and password.</li>
+    <li>You agree to provide accurate and complete information during registration and to keep your account information updated.</li>
+    <li>We reserve the right to suspend or terminate your account if we suspect any fraudulent, misleading, or inappropriate activity.</li>
+</ul>
+
+<h3>4. Property Listings</h3>
+<ul>
+    <li>You are responsible for ensuring that any property listing you submit is accurate, truthful, and complies with local laws.</li>
+    <li>Property listings may be subject to verification by MyHome.ug, but we do not guarantee the accuracy or reliability of any listing.</li>
+    <li>We reserve the right to remove any listing that violates our policies or appears to be fraudulent or misleading.</li>
+</ul>
+
+<h3>5. Use of the Website</h3>
+<p>You agree to use MyHome.ug in accordance with the following rules:</p>
+<ul>
+    <li>You must not use the website for illegal purposes, including but not limited to fraud, money laundering, or other criminal activities.</li>
+    <li>You must not post or transmit any content that is defamatory, offensive, obscene, or otherwise harmful.</li>
+    <li>You must not interfere with the security or proper functioning of the website, including attempting to hack into or disrupt our systems.</li>
+</ul>
+
+<h3>6. Fees and Payments</h3>
+<ul>
+    <li>Some services offered on MyHome.ug may require payment, such as premium property listings or other advertising options.</li>
+    <li>Fees for such services will be clearly communicated before you proceed with the transaction.</li>
+    <li>Payments must be made through the provided payment gateway, and all transactions are final unless otherwise stated in the terms for that specific service.</li>
+</ul>
+
+<h3>7. Third-Party Services and Links</h3>
+<p>MyHome.ug may contain links to third-party websites or services. We do not control or endorse the content of these third-party sites and are not responsible for their actions or policies. We encourage you to review the terms and conditions of any third-party services you engage with through our website.</p>
+
+<h3>8. Limitation of Liability</h3>
+<ul>
+    <li>MyHome.ug provides the platform "as is" and does not guarantee the availability, accuracy, or reliability of the services provided.</li>
+    <li>We are not responsible for any direct, indirect, incidental, or consequential damages arising from your use of the website, including but not limited to property transactions conducted between users.</li>
+    <li>We do not guarantee that the website will be free of errors, viruses, or other harmful components.</li>
+</ul>
+<h3> 9. Indemnification</h3>
+<p>You agree to indemnify, defend, and hold harmless MyHome.ug, its affiliates, and employees from any claims, damages, liabilities, and expenses arising from:
+</p>
+<ul>
+    <li>Your use of the website.</li>
+    <li>Any property transaction or interaction conducted through the website.</li>
+    <li>Your violation of these Terms and Conditions or applicable law.</li>
+</ul>
+
+<h3>10. Termination</h3>
+<p>We reserve the right to suspend or terminate your access to MyHome.ug at any time, without notice, for any reason, including but not limited to a violation of these Terms and Conditions.</p>
+
+<h3>11. Changes to Terms and Conditions</h3>
+<p>We may update or revise these Terms and Conditions from time to time. Any changes will be posted on this page, and your continued use of the website after the changes have been posted will constitute your acceptance of the updated terms.</p>
+
+<h3>12. Governing Law</h3>
+<p>These Terms and Conditions are governed by and construed in accordance with the laws of [Insert Country/Region]. Any disputes arising from these terms or your use of the website will be subject to the exclusive jurisdiction of the courts in Uganda.</p>
+
+<h3>13. Contact Information</h3>
+<p>If you have any questions or concerns regarding these Terms and Conditions, please contact us at:<br>
+Email: realestateuganda41@gmail.com<br>
+    Phone: +256 752122753
+
+
+</p>
+
+    </section>
+
+
+
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="/">
+  <img src="{% static 'image/02.png' %}" alt="Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <p> MyHome is your trusted partner in finding the perfect property. Whether you're looking to buy, sell, or rent, we offer a comprehensive range of services to meet your real estate needs. Our dedicated team ensures a seamless experience with personalized support and expert advice.</p>
+
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Services</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">List Your Property</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="/propertytypes">Buy Property</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">Rental Property</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Help Center</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/termcondition">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> MyHome </h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="/about">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Work With Us</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Our Brand Book</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/trends">Real Estate Trends</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="/blogpage">Blogs</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+           <div class="footer-social-media">
+          <h2 class="footer-social-media-title">Follow Us</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+   <script src="{% static '/script.js' %}"></script>
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

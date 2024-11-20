@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="{% static '/image/logomyhome.png' %}" height="60px">
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/propertytypes">Property</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/postproperty" class="post-btn">
+            <button>Post Your Property</button>
+        </a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</header>
+
+<section class="term">
+
+<h1 align="center"> Privacy Policy</h1>
+<hr>
+
+<h3> 1. Information We Collect</h3>
+<p>We may collect the following types of information when you interact with our website:</p>
+<ul>
+<li>Personal Information: Name, email address, phone number, and any other details provided when registering, filling forms, or contacting us.</li>
+<li>Property Information: Details about the property you wish to buy, sell, or rent.</li>
+<li>Location Data: When browsing properties or accessing certain features, we may collect location data to offer you relevant property listings.</li>
+    <li>Technical Data: Your IP address, browser type, device information, and usage data (such as pages visited).</li>
+</ul>
+<h3>2. How We Use Your Information</h3>
+<p>We use the information collected for the following purposes:</p>
+<ul>
+    <li>To provide you with the services offered on MyHome.ug (buying, selling, or renting properties).</li>
+    <li>To send you relevant property listings and updates based on your preferences.</li>
+    <li>To respond to inquiries or requests you submit through our website.</li>
+    <li>To improve our website's functionality and enhance your user experience.</li>
+    <li>To analyze trends and monitor site usage to better understand user needs.</li>
+</ul>
+
+<h3>3. Cookies and Tracking Technologies</h3>
+<p>We use cookies and similar tracking technologies to improve your experience on our website. Cookies help us:</p>
+<ul>
+    <li>Remember your preferences and personalized settings.</li>
+    <li>Provide targeted advertising and marketing communications.</li>
+    <li>Analyze website traffic and user behavior.</li>
+
+</ul>
+
+<h3>4. How We Share Your Information</h3>
+<p>We do not sell or share your personal information with third parties except in the following situations:</p>
+<ul>
+    <li>Service Providers: We may share information with trusted third-party service providers who assist us in delivering services (e.g., payment processors, IT support).</li>
+    <li>Legal Requirements: We may disclose your information if required by law or to protect our legal rights.</li>
+    <li>Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
+</ul>
+
+<h3>5. Data Security</h3>
+<p>We take reasonable measures to protect your personal data from unauthorized access, disclosure, alteration, or destruction. However, no data transmission over the internet is completely secure, and we cannot guarantee the absolute security of your information.</p>
+
+<h3>6. Your Rights</h3>
+<p>You have the following rights concerning your personal data:</p>
+<ul>
+    <li>Access and Correction: You can request access to or correction of your personal data at any time.</li>
+    <li>Data Deletion: You may request that we delete your personal data, except when we are legally required to retain it.</li>
+    <li>Withdraw Consent: You may withdraw your consent to the use of your personal data at any time, but this may affect our ability to provide services.</li>
+</ul>
+
+<h3>7. Third-Party Links</h3>
+<p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of these sites. We encourage you to review their privacy policies before sharing any personal information.</p>
+
+<h3>8. Changes to the Privacy Policy</h3>
+<p>We may update this privacy policy from time to time. Any changes will be posted on this page with the updated date. We encourage you to review the policy regularly to stay informed about how we are protecting your information.</p>
+
+<h3>9. Contact Us</h3>
+<p>If you have any questions about this privacy policy or your personal data, please contact us at:<br>
+Email: realestateuganda41@gmail.com<br>
+    Phone: +256 752122753
+
+</p>
+</section>
+
+
+<footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="/">
+  <img src="{% static 'image/02.png' %}" alt="Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <p> MyHome is your trusted partner in finding the perfect property. Whether you're looking to buy, sell, or rent, we offer a comprehensive range of services to meet your real estate needs. Our dedicated team ensures a seamless experience with personalized support and expert advice.</p>
+
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Services</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">List Your Property</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="/propertytypes">Buy Property</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">Rental Property</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Help Center</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/termcondition">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> MyHome </h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="/about">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Work With Us</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Our Brand Book</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/trends">Real Estate Trends</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="/blogpage">Blogs</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+           <div class="footer-social-media">
+          <h2 class="footer-social-media-title">Follow Us</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static '/script.js' %}"></script>
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

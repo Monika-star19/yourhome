@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="{% static '/image/logomyhome.png' %}" height="60px">
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/propertytypes">Property</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/postproperty" class="post-btn">
+            <button>Post Your Property</button>
+        </a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</header>
+
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="{% static '/image/platinumplot1.jpeg' %}">
+                <div class="content">
+                    <div class="title">Sanchi</div>
+                    <div class="topic">Platimun Park</div>
+                    <div class="des">
+                        <!-- lorem 50 --></div>
+                    <div class="buttons">
+                     <a href="sanchiplatinumpark">   <button>DETAILS</button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/splendid3.webp' %}">
+                <div class="content">
+                    <div class="title">Sanchi</div>
+                    <div class="topic">Splendid Apartments</div>
+                    <div class="des"> </div>
+                    <div class="buttons">
+                     <a href="/sanchislpendidpage">  <button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/krativilla5.jpeg' %}">
+                <div class="content">
+                    <div class="title">Krati </div>
+                    <div class="topic">Kanak Villa</div>
+                    <div class="des"> </div>
+                    <div class="buttons">
+                   <a href="/krativilla"><button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/villa1.jpg' %}">
+                <div class="content">
+                    <div class="title">Sanchi</div>
+                    <div class="topic">Luxury Villa</div>
+                    <div class="des"></div>
+                    <div class="buttons">
+                        <button>DETAILS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="{% static '/image/platinumplot1.jpeg' %}">
+                <div class="content">
+                    <div class="title">
+                        Platinum Park
+                    </div>
+                    <div class="description">
+                        Plots
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/splendid3.webp' %}">
+                <div class="content">
+                    <div class="title">
+                        Sanchi Splendid
+                    </div>
+                    <div class="description">
+                        Flats
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/krativilla5.jpeg' %}">
+                <div class="content">
+                    <div class="title">
+                        Kanak Villa
+                    </div>
+                    <div class="description">
+                        Flats
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static '/image/villa1.jpg' %}">
+                <div class="content">
+                    <div class="title">
+                        Sanchi Villa
+                    </div>
+                    <div class="description">
+                        Villas
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+<!-- Property Listings Section -->
+<section class="property-listings-section py-5">
+        <h3 class="text-center mb-4">Featured Properties</h3>
+            <div class="property-grid">
+                <div class="property-item">
+    <a href="#">
+        <img src="{% static '/image/villaa.webp' %}" alt="Property 1" class="img-fluid">
+        <div class="property-details">
+            <p class="property-name">Sanchi Villa</p>
+            <div class="property-info">
+                <span class="property-area">Starts @</span> <!-- Left Side -->
+                <span class="property-price">₹ 50,00,000</span> <!-- Right Side -->
+            </div>
+        </div>
+    </a>
+</div>
+
+                <div class="property-item">
+    <a href="/sanchislpendidpage">
+        <img src="{% static '/image/splendid.webp' %}" alt="Property 1" class="img-fluid">
+        <div class="property-details">
+            <p class="property-name">Sanchi Splendid Flats</p>
+            <div class="property-info">
+                <span class="property-area">Starts @</span> <!-- Left Side -->
+                <span class="property-price">₹ 50,00,000</span> <!-- Right Side -->
+            </div>
+        </div>
+    </a>
+</div>
+
+                <div class="property-item">
+    <a href="#">
+        <img src="{% static '/image/mandot3.jpg' %}" alt="Property 1" class="img-fluid">
+        <div class="property-details">
+            <p class="property-name">Mandot Prime</p>
+            <div class="property-info">
+                <span class="property-area">Starts @</span> <!-- Left Side -->
+                <span class="property-price">₹ 50,00,000</span> <!-- Right Side -->
+            </div>
+        </div>
+    </a>
+</div><!-- Add more property items as needed -->
+            </div>
+</section>
+
+
+
+
+<section class="property-listings-section py-5">
+  <h3 class="text-center mb-4">Our Featured Blogs</h3>
+  <div class="property1-grid">
+    <div class="property1-item">
+      <a href="#">
+        <img src="{% static '/image/sanchi1.jpg' %}" alt="Property 1" class="img-fluid">
+        <div class="property1-details">
+          <p class="property1-name">Featured Blog</p>
+          <p class="para"></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="property1-item">
+      <a href="#">
+        <img src="{% static '/image/sanchi4.jpg' %}" alt="Property 2" class="img-fluid">
+        <div class="property1-details">
+          <p class="property1-name">Featured Blog</p>
+          <p class="para"></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="property1-item">
+      <a href="#">
+        <img src="{% static '/image/sanchi5.jpg' %}" alt="Property 3" class="img-fluid">
+        <div class="property1-details">
+          <p class="property1-name">Featured Blog</p>
+          <p class="para"></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="property1-item">
+      <a href="#">
+        <img src="{% static '/image/sanchi9.jpg' %}" alt="Property 4" class="img-fluid">
+        <div class="property1-details">
+          <p class="property1-name">Featured Blog</p>
+            <p class="para"></p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Add more property items as needed -->
+  </div>
+</section>
+
+   <section class="property-listings-section py-5" >
+    <h3 class="text-center mb-4">Select Your Property Type</h3>
+<div class="property-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <div class="property-item">
+            <a href="/flats">
+                <img src="{% static '/image/mndt.png' %}" alt="Property 1" class="img-fluid">
+                <div class="property-details">
+                    <p class="property-name">Flats</p>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="property-item">
+            <a href="/house">
+                <img src="{% static '/image/tulip9.jpeg' %}" alt="Property 1" class="img-fluid">
+                <div class="property-details">
+                    <p class="property-name">Independent House</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="property-item">
+            <a href="/villa">
+                <img src="{% static '/image/vla.png' %}" alt="Property 1" class="img-fluid">
+                <div class="property-details">
+                    <p class="property-name">Villas</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="property-item">
+            <a href="/plots">
+                <img src="{% static '/image/pp.png' %}" alt="Property 1" class="img-fluid">
+                <div class="property-details">
+                    <p class="property-name">Plots</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+<div class="newsletter">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-7">
+                <div class="section-title text-center">
+                    <h2>Our Newsletter</h2>
+                    <p>We bring the right people together to challenge established thinking and drive transformation.
+                        We will show the way to successive.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-7">
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="#">
+  <img src="{% static 'image/02.png' %}" alt="Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <div class="footer-menu">
+            <p> MyHome is your trusted partner in finding the perfect property. Whether you're looking to buy, sell, or rent, we offer a comprehensive range of services to meet your real estate needs. Our dedicated team ensures a seamless experience with personalized support and expert advice.</p>
+
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Services</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">List Your Property</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="/propertytypes">Buy Property</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/propertytypes">Rental Property</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Help Center</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/termcondition">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> MyHome </h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="/about">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Work With Us</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Our Brand Book</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Real Estate Trends</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="/blogpage">Blogs</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+           <div class="footer-social-media">
+          <h2 class="footer-social-media-title">Follow Us</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer-social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   <script src="{% static '/script.js' %}"></script>
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
